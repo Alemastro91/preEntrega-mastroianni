@@ -1,5 +1,4 @@
-
-import NavBar from "./componentes/NavBar/NavBar"
+import NavBar from "./components/NavBar/NavBar"
 
 //Lite Store
 function App() {

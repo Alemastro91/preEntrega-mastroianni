@@ -21,6 +21,7 @@ h1{
     align-items: center;
     font-size: 1.4rem;
     color: white;
+    
 }
 
 a:link, a:visited{
@@ -28,10 +29,15 @@ a:link, a:visited{
 }
 
 .carrito-logo, .item-cont{
-    display: flex;
     margin-left: 100px;
 }
 
 .carrito-logo{
     font-size: 2.2rem;
+    
+}
+
+.numero{
+    display: flex;
+    font-weight: 600;
 }
