@@ -9,12 +9,9 @@ function NavBar () {
                 <a href="index.html">Home</a>
                 <a href="prductos.html">Productos</a>
                 <a href="aboutUs.html">Sobre Nosotros</a>
-                <CartWidget className="carrito-logo"/>
-                <ItemListContainer className="item-cont" />
+                <CartWidget contador="1" />
+                <ItemListContainer greeting="Hi" />
             </nav>
-
-            <h1>Bienvenido a Lite Store</h1>
-
         </div>
     )
 }

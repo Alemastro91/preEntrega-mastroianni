@@ -8,6 +8,8 @@ function App() {
 
       <NavBar />
 
+      <h1>Bienvenido a Lite Store</h1>
+
     </div>
   )
 }
