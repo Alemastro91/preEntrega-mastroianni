@@ -1,12 +1,12 @@
-import CartWidget from './componentes/cartWidget'
-import ItemListContainer from './componentes/itemListCont'
+import NavBar from "./componentes/NavBar/NavBar";
+import "./App.css";
 
+//Lite Store
 function App() {
   return (
     <div className = "App">
-      <CartWidget/>
-
-      <ItemListContainer/>
+      
+      <NavBar />
 
       <h1>Hola Mundo</h1>
 

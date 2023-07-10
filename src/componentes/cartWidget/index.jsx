@@ -1,5 +1,5 @@
-import "./index.css"
 import React from "react"
+import "./index.css"
 import { BsCart4 } from "react-icons/Bs"
 
 const CartWidget = () => {
@@ -8,4 +8,4 @@ const CartWidget = () => {
     )
 }
 
-export default CartWidget
+export default CartWidget;
