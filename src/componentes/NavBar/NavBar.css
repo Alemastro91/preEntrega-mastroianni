@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+h1{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.barra-menu{
+    display: flex;
+    flex-direction:row;
+    gap: 2rem;  
+    width: 960px;  
+    height: 80px;
+    background: rgb(0,143,123);
+    background: linear-gradient(90deg, rgba(0,143,123,1) 0%, rgba(71,71,203,1) 100%);
+    align-items: center;
+    font-size: 1.4rem;
+    color: white;
+}
+
+a:link, a:visited{
+    color: white;
+}
+
+.carrito-logo, .item-cont{
+    display: flex;
+    margin-left: 100px;
+}

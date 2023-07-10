@@ -1,8 +1,8 @@
 
 const ItemListContainer = () => {
     return (
-        <div>ItemListContainer</div>
+        <div calssName="item-cont">ItemListContainer</div>
     )
 }
 
-export default ItemListContainer
+export default ItemListContainer;
