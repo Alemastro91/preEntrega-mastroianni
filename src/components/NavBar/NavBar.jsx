@@ -1,5 +1,4 @@
 import CartWidget from "../CartWidget";
-import ItemListContainer from "../itemListContainer";
 import "./NavBar.css"
 
 function NavBar () {
@@ -9,8 +8,7 @@ function NavBar () {
                 <a href="index.html">Home</a>
                 <a href="prductos.html">Productos</a>
                 <a href="aboutUs.html">Sobre Nosotros</a>
-                <CartWidget contador="1" />
-                <ItemListContainer greeting="Hi" />
+                <CartWidget contador="1" />                
             </nav>
         </div>
     )

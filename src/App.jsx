@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar/NavBar"
+import ItemListContainer from "./components/ItemListContainer"
 
 //Lite Store
 function App() {
@@ -7,7 +8,8 @@ function App() {
 
       <NavBar />
 
-      <h1>Bienvenido a Lite Store</h1>
+      <ItemListContainer greeting="Bienvenido a Lite Store" />
+
 
     </div>
   )
