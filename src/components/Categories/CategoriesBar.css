@@ -1,0 +1,25 @@
+.subNav{
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    height: 40px;
+    background: rgb(123,122,142);
+    background: linear-gradient(90deg, rgba(123,122,142,1) 0%, rgba(59,59,212,0.631171218487395) 98%);
+    border: solid rgb(95, 93, 93);
+    border-radius: 0px 0px 10px 10px;
+    gap: 50rem;  
+}
+
+.left-side{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
