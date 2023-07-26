@@ -2,14 +2,30 @@ import CartWidget from "../CartWidget";
 import CategorieBar from "../Categories/CategoriesBar";
 import "./NavBar.css"
 
-function NavBar () {
+function NavBar (props) {
+
+    const onClickCategory = (item) => {
+        props.onClick(item);
+    }
+
     return (
         <div className="estilo-bar">
             <nav className="barra-menu">
                 <a href="index.html"><img className="logo-app" src="../img/liteSotoreLogo2.png" alt="logo-app" /></a>
                 <a href="index.html">Home</a>
-                <a href="prductos.html">Productos</a>
-                <a href="aboutUs.html">Sobre Nosotros</a>
+                
+                <ul className="categ-byprops">
+                    {props.items.map((item, index) =>{
+                        return (
+                            <li 
+                            key={index}
+                            onClick={() => onClickCategory(item)}
+                            >
+                            {item}</li>
+                        )
+                    })}
+                </ul>
+
                 <CartWidget contador="1" />                
             </nav> 
 

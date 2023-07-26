@@ -1,8 +1,11 @@
-import React from 'react'
 
-const Item = () => {
+function Item (props) {
+  
+
   return (
-    <div>Item</div>
+    <div className="item-box" >
+    
+    </div>
   )
 }
 

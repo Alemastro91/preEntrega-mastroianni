@@ -6,8 +6,7 @@ const CategorieBar = () => {
     <div className='subNav'>
        
       <div className='left-side'> 
-        <a href="categorias.html">Categorias</a>
-        <a href="favoritos.htlm">Fav`s</a>
+          //SubMenu a realizar//
       </div>
 
       <div className='right-side'>

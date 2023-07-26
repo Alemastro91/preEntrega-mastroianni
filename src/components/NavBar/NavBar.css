@@ -24,6 +24,14 @@ h1{
     border-radius: 0px 0px 10px 10px;    
 }
 
+.categ-byprops{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    
+}
+
 .logo-app{
     display: flex;
     flex-direction: row;
