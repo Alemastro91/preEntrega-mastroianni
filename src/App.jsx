@@ -1,14 +1,16 @@
 import NavBar from "./components/NavBar/NavBar"
-import ItemListContainer from "./components/ItemListContainer"
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+
 
 //Lite Store
 function App() {
+
   return (
     <div className = "App">
 
       <NavBar />
 
-      <ItemListContainer greeting="Bienvenido a Lite Store" />
+      <ItemListContainer />
 
 
     </div>
