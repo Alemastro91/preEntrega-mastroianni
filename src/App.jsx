@@ -1,7 +1,14 @@
+import {
+  BrowserRouter,
+  Routes,
+  Route} from "react-router-dom";
+  
+  import React from "react";
+  import { Link } from "react-router-dom";
+
 import NavBar from "./components/NavBar/NavBar"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer" 
 import { useEffect, useState } from "react";
-
 
 //Lite Store
 function App() {
@@ -39,14 +46,20 @@ function App() {
 
 
   return (
-    <div className = "App">
+    <div className = "App">   
+      
+      <BrowserRouter>
 
-      <NavBar items={categorias}
-      onClick={setSelectedCategory}
-      />
+          <NavBar items={categorias}
+          onClick={setSelectedCategory}
+          />
 
-      <ItemListContainer items={productos} />
+      <Routes>
+        <Route exact path="/" element={<ItemListContainer items={productos} />}
+        />
 
+      </Routes>      
+      </BrowserRouter>
 
     </div>
   )

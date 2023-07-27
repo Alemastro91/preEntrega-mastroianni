@@ -2,6 +2,10 @@ import CartWidget from "../CartWidget";
 import CategorieBar from "../Categories/CategoriesBar";
 import "./NavBar.css"
 
+import React from "react";
+import { Link } from "react-router-dom";
+
+
 function NavBar (props) {
 
     const onClickCategory = (item) => {
@@ -13,6 +17,7 @@ function NavBar (props) {
             <nav className="barra-menu">
                 <a href="index.html"><img className="logo-app" src="../img/liteSotoreLogo2.png" alt="logo-app" /></a>
                 <a href="index.html">Home</a>
+                
                 
                 <ul className="categ-byprops">
                     {props.items.map((item, index) =>{
