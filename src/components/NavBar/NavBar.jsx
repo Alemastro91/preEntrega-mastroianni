@@ -1,4 +1,4 @@
-import CartWidget from "../CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
 import CategorieBar from "../Categories/CategoriesBar";
 import "./NavBar.css"
 
@@ -8,26 +8,37 @@ import { Link } from "react-router-dom";
 
 function NavBar (props) {
 
-    const onClickCategory = (item) => {
-        props.onClick(item);
-    }
+    const categorias = [ 
+        {
+            id:"03",
+            name:"Todos los Producto",
+            path:"/"
+        },
+        {
+            id:"01",
+            name:"Nuevos",
+            path:"/category/Nuevo"
+        },
+        {
+            id:"02",
+            name:"Usados",
+            path:"/category/Usado"
+        }
+    ];
 
+    
     return (
         <div className="estilo-bar">
             <nav className="barra-menu">
-                <a href="index.html"><img className="logo-app" src="../img/liteSotoreLogo2.png" alt="logo-app" /></a>
-                <a href="index.html">Home</a>
+                <Link to="/"><img className="logo-app" src="../img/liteSotoreLogo2.png" alt="logo-app" /></Link>
+                <Link to="/">Home</Link>
                 
                 
-                <ul className="categ-byprops">
-                    {props.items.map((item, index) =>{
-                        return (
-                            <li 
-                            key={index}
-                            onClick={() => onClickCategory(item)}
-                            >
-                            {item}</li>
-                        )
+                <ul className="categ-byprops"> 
+                    {categorias.map((cat)=> {
+                        return <li key={cat.id} >
+                            <Link to={cat.path}> {cat.name} </Link>
+                        </li>
                     })}
                 </ul>
 

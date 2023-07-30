@@ -1,4 +1,3 @@
-import React from 'react'
 import "./CategoriesBar.css" 
 
 const CategorieBar = () => {
@@ -17,4 +16,4 @@ const CategorieBar = () => {
   )
 }
 
-export default CategorieBar
+export default CategorieBar;

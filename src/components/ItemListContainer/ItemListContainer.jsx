@@ -1,28 +1,32 @@
 import "./ItemListContainer.css"
-
+import { useEffect, useState } from "react";
+import ItemList from "../ItemList/ItemList";
+import { useParams } from "react-router-dom";
 
 function ItemListContainer (props)  {
 
- const renderItem = () => {
-    return props.items.map((item) =>{
-      return(
-        <div key={item.id} >
-
-          <h1 className="name-box">{item.name}</h1>
-          <img className="img-box" src={item.imagen} alt={item.name} />
-          <p>{item.estado}</p>
-          <p className="precio-box">${item.precio}</p>
-          <button className="fav-boton">Agregar a Favoritos</button>
-
-        </div>
-      )
+  const [productos, setProductos] = useState([]);
+  const {categoryId} = useParams()  
+  
+  useEffect(() => {
+    fetch("https://64ac87ab9edb4181202f9bd9.mockapi.io/dbiPhone")
+    .then((response) => response.json())
+    .then((response) =>{
+      if (categoryId){
+        setProductos(response.filter((item) => item.estado === categoryId))
+      }else{
+        setProductos(response)
+      }
     })
-  }
+    .catch((error) => {
+      console.log("error:", error)
+    })
+  },[categoryId])
 
-  return (
+return (
     <div className="itemlist-box">
 
-    {renderItem()}
+      <ItemList productos={productos} /> 
 
     </div>
   )

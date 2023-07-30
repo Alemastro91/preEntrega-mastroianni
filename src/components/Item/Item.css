@@ -1,0 +1,44 @@
+.product-box{
+    height: 375px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.8328518907563025) 0%, rgba(255,255,255,0.5545479910714286) 99%);  
+    border: solid black .10rem;
+}
+
+.img-box{
+    margin: .5rem;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.name-box{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: black;
+    text-shadow: 1px 2px white;
+
+}
+p{
+    padding-left: .9rem;
+}
+
+.precio-box{
+    text-align: right;
+    font-weight: 700;
+    padding-right: 1rem;
+    
+}
+
+.detail-boton{
+    display: flex;
+    width: 80px;
+    height: 33px;
+    align-items: center;
+    margin-top: .7rem ;
+    margin-left: 7.9rem ;
+    border: solid grey;
+    background-color: rgb(67, 61, 61);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
