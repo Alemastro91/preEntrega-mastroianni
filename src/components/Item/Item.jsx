@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ItemCount from "../ItemCoutn/ItemCount";
 import "./Item.css";
 
 function Item ({item}) {
@@ -9,6 +10,9 @@ function Item ({item}) {
             <p> {item.estado} </p>
             <p className="precio-box">${item.precio}</p>
             <Link to={`/item/${item.id}`} className="detail-boton">Ver Mas</Link>
+
+            <ItemCount valorinicial={0} stock={11} />
+
         </div>
   )
 }

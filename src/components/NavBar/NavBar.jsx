@@ -2,7 +2,6 @@ import CartWidget from "../CartWidget/CartWidget";
 import CategorieBar from "../Categories/CategoriesBar";
 import "./NavBar.css"
 
-import React from "react";
 import { Link } from "react-router-dom";
 
 
@@ -12,7 +11,7 @@ function NavBar (props) {
         {
             id:"03",
             name:"Todos los Producto",
-            path:"/"
+            path:"/All"
         },
         {
             id:"01",

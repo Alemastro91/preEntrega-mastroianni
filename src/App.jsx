@@ -6,6 +6,7 @@ import {
 import NavBar from "./components/NavBar/NavBar"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import Home from "./components/Home/Home";
 
 //Lite Store
 function App() {
@@ -18,8 +19,8 @@ function App() {
           <NavBar/>
 
       <Routes>
-
-        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/All" element={<ItemListContainer />} />
         <Route path="/category/:categoryId" element={<ItemListContainer />} />
         <Route path="/item/:id" element={<ItemDetailContainer />} />
 
