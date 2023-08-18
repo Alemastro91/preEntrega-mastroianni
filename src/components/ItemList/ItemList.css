@@ -1,0 +1,9 @@
+.itemlist-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 1rem;
+}

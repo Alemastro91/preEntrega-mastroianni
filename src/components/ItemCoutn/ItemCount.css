@@ -1,14 +1,14 @@
 .count-box{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     font-size: 1.5rem;
     gap: 1rem;
     background-color:rgba(21, 116, 139, 0.493);
-    width: 100px;
-    margin-left: .3rem;
-    margin-top: -2.5rem;
+    width: 200px;
     border-radius: 5px;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 .plus-button, .less-button{
@@ -17,4 +17,8 @@
     font-size: 2rem;
     border-radius: 5px;
     align-items: center;
+}
+
+.buy-button{
+    font-size: 1.2rem;
 }
