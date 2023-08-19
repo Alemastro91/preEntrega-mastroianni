@@ -11,10 +11,11 @@ const CartItem = ({item}) => {
     <div className='cartItem-box'>
         <img src={item.imagen} alt={item.name} className='prod-mini'/>
         <h2>{item.name}</h2>
+        <p>Cantidad:</p>
         <p>{item.cantidad}</p>
         <p>{item.precio} $Usd</p>
         <p>Sub total : $ {item.cantidad * item.precio} $Usd</p>       
-        <button onClick={()=>borrarItem(item.id)} >X</button>
+        <button className='delet-item' onClick={()=>borrarItem(item.id)} >X</button>
     </div>
   )
 }
