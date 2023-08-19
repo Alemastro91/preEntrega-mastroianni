@@ -25,7 +25,7 @@ function NavBar (props) {
         {
             id:"04",
             name:"Accesorios",
-            path:"/category/accesorios"
+            path:"/category/Accesorios"
         }
     ];
 

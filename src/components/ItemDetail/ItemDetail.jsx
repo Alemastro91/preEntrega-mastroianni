@@ -22,12 +22,16 @@ const ItemDetail = ({producto}) => {
         <div className='prod-detail'>
 
           <h2 className='prod-tittle'>Producto: {producto.name}</h2>
-          <h3>Almacenamiento: {producto.almacenamiento}</h3>
-          <h3>Color: {producto.color}</h3>
+          {producto.almacenamiento? <h3>Almacenamiento:{producto.almacenamiento}</h3> : <> </>}
+          {producto.color? <h3>Almacenamiento:{producto.color}</h3> : <> </>}
           <h3>Estado: {producto.estado}</h3>
+          <h4>Info: {producto.info}</h4>
           <h3>Precio: USD ${producto.precio}</h3>      
           {cantidadAgregada === "" ? <ItemCount valorinicial={0} stock={11} onAdd={onAdd}/>
-          :<Link to="/cart" className="gocart-button">Ir al Carrito</Link>}
+          : <div className='buy-menu'>
+            <Link to="/cart" className="gocart-button">Ir al Carrito</Link> 
+            <Link to="/All" className='go-tobuy1'> Comprar Más </Link> 
+          </div>} 
           
         </div>
       

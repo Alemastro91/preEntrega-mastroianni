@@ -4,14 +4,22 @@ import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../service/firebase";
+import Loader from "../Loader/Loader";
 
 
 function ItemListContainer (props)  {
 
   const [productos, setProductos] = useState([]);
   const {categoryId} = useParams()  
+  const [loading , setLoading] = useState(true)
   
   useEffect(() => {
+
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000);
+    
+    setLoading(true)
     const coleccionDeProductos = categoryId ? query(collection(db, "iPhoneDB"), where("estado", "==", categoryId)): collection(db, "iPhoneDB") 
     getDocs(coleccionDeProductos) 
     .then ((response) => {
@@ -29,8 +37,9 @@ function ItemListContainer (props)  {
 
 return (
     <div className="itemlist-box">
-
-      <ItemList productos={productos} /> 
+      
+      {loading ? <Loader /> : <ItemList productos={productos} /> }
+      
 
     </div>
   )

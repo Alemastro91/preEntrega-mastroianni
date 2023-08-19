@@ -12,6 +12,7 @@
     flex-direction: column;
     align-items: flex-start;   
     margin-right: 4rem;
+    gap: 1rem;
 }
 
 .prod-tittle{
@@ -24,8 +25,13 @@
     border-radius: 15px;
 }
 
+.buy-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
 
-.gocart-button{
+.gocart-button, .go-tobuy1{
     background-color: rgba(13, 148, 151, 0.28);
     color: white;
     width: 130px;
@@ -34,9 +40,11 @@
     margin-top: 1rem;
     text-align: center;
     padding-top: .2rem;
+    padding: .2rem;
     border: solid black 3px;
     border-radius: 10px;
 }
+
 
 .gocart-button:hover{
     background-color: aliceblue;
