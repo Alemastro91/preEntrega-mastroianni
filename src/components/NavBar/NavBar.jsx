@@ -21,6 +21,11 @@ function NavBar (props) {
             id:"02",
             name:"Usados",
             path:"/category/Usado"
+        },
+        {
+            id:"04",
+            name:"Accesorios",
+            path:"/category/accesorios"
         }
     ];
 
@@ -30,8 +35,6 @@ function NavBar (props) {
             <nav className="barra-menu">
                 <Link to="/"><img className="logo-app" src="../img/liteSotoreLogo2.png" alt="logo-app" /></Link>
                 <Link to="/">Home</Link>
-                
-                
                 
                 <ul className="categ-byprops"> 
                     {categorias.map((cat)=> {

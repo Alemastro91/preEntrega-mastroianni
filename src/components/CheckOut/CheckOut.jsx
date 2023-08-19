@@ -69,7 +69,7 @@ return (
                         <input onChange={((e) => setValidarMail(e.target.value))} type="email" placeholder="abcdefg@hijklm.com" name="mail"/>
                     </div>
 
-                    <button type='submit' disabled={validarMail !== user.mail}>Generar Orden</button>
+                    <button type='submit' disabled={validarMail !== user.mail}>Realizar Compra</button>
 
             </form>
             </div>

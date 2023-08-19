@@ -6,27 +6,11 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../service/firebase";
 
 
-
 function ItemListContainer (props)  {
 
   const [productos, setProductos] = useState([]);
   const {categoryId} = useParams()  
   
-  // useEffect(() => {
-  //   fetch("https://64ac87ab9edb4181202f9bd9.mockapi.io/dbiPhone")
-  //   .then((response) => response.json())
-  //   .then((response) =>{
-  //     if (categoryId){
-  //       setProductos(response.filter((item) => item.estado === categoryId))
-  //     }else{
-  //       setProductos(response)
-  //     }
-  //   })
-  //   .catch((error) => {
-  //     console.log("error:", error)
-  //   })
-  // },[categoryId])
-
   useEffect(() => {
     const coleccionDeProductos = categoryId ? query(collection(db, "iPhoneDB"), where("estado", "==", categoryId)): collection(db, "iPhoneDB") 
     getDocs(coleccionDeProductos) 
@@ -47,8 +31,6 @@ return (
     <div className="itemlist-box">
 
       <ItemList productos={productos} /> 
-
-      
 
     </div>
   )
