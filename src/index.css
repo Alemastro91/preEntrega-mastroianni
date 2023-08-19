@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  background-image:url("../public/img/liteStoreBG.png");
+  background-image:url("../public/img/liteStoreBG.jpg");
   background-repeat:repeat-y;
   background-size:cover;
 }
