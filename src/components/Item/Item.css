@@ -1,7 +1,7 @@
 .product-box{
     height: 370px;
     width: 220px;
-    background-color: rgba(117, 128, 137, 0.786);
+    background-color: rgba(117, 128, 137, 0.546);
     border: solid black .10rem;
     border-radius: 15px;
 }

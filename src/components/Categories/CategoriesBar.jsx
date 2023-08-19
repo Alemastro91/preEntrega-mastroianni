@@ -4,13 +4,7 @@ const CategorieBar = () => {
   return (
     <div className='subNav'>
        
-      <div className='left-side'> 
-          //SubMenu a realizar//
-      </div>
-
-      <div className='right-side'>
-        <a href="login">Log-In</a>
-      </div>
+      <h4 className="intre-cont"> Bienvenidos a nuestra Tienda de Telefonos y Accesorios - Elige alguna categorio y mira nuestros poductos. </h4>
 
     </div>
   )

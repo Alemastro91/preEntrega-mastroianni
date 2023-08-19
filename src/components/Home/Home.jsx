@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
 
-        <h1>Bienvenido a Lite Store</h1>
+        <h1 className='logo-container' >Bienvenido a Lite Store</h1>
 
     </div>
   )
