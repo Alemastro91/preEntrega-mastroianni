@@ -1,9 +1,9 @@
 import { addDoc, collection,serverTimestamp } from 'firebase/firestore';
 import React, { useState, useContext } from 'react';
 import { CartContext } from '../../context/cartContext';
-import { db } from '../service/firebase';
 import "./CheckOut.css"
 import { Link } from 'react-router-dom';
+import { db } from '../../service/firebase';
 
 
 const CheckOut = () => {

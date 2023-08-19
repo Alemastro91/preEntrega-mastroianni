@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import "./ItemDetailContainer.css"
 import { collection, doc, getDoc } from 'firebase/firestore';
-import { db } from '../service/firebase';
+import { db } from '../../service/firebase';
 import Loader from '../Loader/Loader';
 
 const ItemDetailContainer = () => {
