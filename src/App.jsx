@@ -9,6 +9,8 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import Home from "./components/Home/Home";
 import LogIn from "./components/Log-In/LogIn";
 import { CartProvider } from "./context/cartContext";
+import Cart from "./components/Cart/Cart";
+import CheckOut from "./components/CheckOut/CheckOut";
 
 
 //Lite Store
@@ -17,7 +19,7 @@ function App() {
   return (
     <div className = "App">   
       
-      {/* <CartProvider> */}
+      <CartProvider>
         <BrowserRouter>
               <NavBar/>
             <Routes>
@@ -26,9 +28,11 @@ function App() {
               <Route path="/All" element={<ItemListContainer />} />
               <Route path="/category/:categoryId" element={<ItemListContainer />} />
               <Route path="/item/:id" element={<ItemDetailContainer />} />
+              <Route path="/cart" element={<Cart />} /> 
+              <Route path="/checkout" element={<CheckOut/>} />
             </Routes>      
           </BrowserRouter>
-      {/* </CartProvider> */}
+      </CartProvider>
       
     </div>
   )

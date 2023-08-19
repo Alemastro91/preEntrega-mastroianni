@@ -1,7 +1,6 @@
 import CartWidget from "../CartWidget/CartWidget";
 import CategorieBar from "../Categories/CategoriesBar";
 import "./NavBar.css"
-
 import { Link } from "react-router-dom";
 
 
@@ -33,6 +32,7 @@ function NavBar (props) {
                 <Link to="/">Home</Link>
                 
                 
+                
                 <ul className="categ-byprops"> 
                     {categorias.map((cat)=> {
                         return <li key={cat.id} >
@@ -41,7 +41,7 @@ function NavBar (props) {
                     })}
                 </ul>
 
-                <CartWidget contador="1" />                
+                <Link to="/cart"> <CartWidget/> </Link>                
             </nav> 
 
             <CategorieBar />  

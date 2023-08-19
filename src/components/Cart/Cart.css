@@ -1,0 +1,32 @@
+.go-tobuy{
+    display: flex;
+    border: black solid 4px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(56, 131, 198, 0.387);
+    font-size: 2rem;
+    margin: 1rem;
+    padding: .5rem;
+    align-items: center;
+}
+
+.go-tobuy:hover{
+    background-color: black;
+    color: white;
+}
+
+.empty-mssg{
+    display: flex;
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+}
+
+.cart-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 5rem;
+}

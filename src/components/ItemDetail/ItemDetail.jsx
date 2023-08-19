@@ -7,15 +7,13 @@ import { CartContext } from '../../context/cartContext';
 
 const ItemDetail = ({producto}) => {
   const [cantidadAgregada, setCantidadAgregada] = useState("")
-  const context = useContext(CartContext)
-  console.log(context)
+  const {agregarItem} = useContext(CartContext)
 
   const onAdd = (cantidad) => {
-  console.log(`Compraste ${cantidad} productos`)
-    setCantidadAgregada(cantidad)
-    
-    
-  }
+    // console.log(`Compraste ${cantidad} productos`)
+      setCantidadAgregada(cantidad)
+      agregarItem(producto, cantidad)
+    }
   
   return (
     <div className='detail-box'>

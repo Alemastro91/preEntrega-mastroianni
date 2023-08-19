@@ -1,0 +1,10 @@
+.cartItem-box{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.prod-mini{
+    height: 200px;
+    border-radius: 15px;
+}
